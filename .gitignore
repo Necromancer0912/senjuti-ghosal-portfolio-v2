@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+
+# IDE & OS
+.DS_Store
+.vscode/
+.vercel/
+.stitch/
+
+# Unused images
+public/logo.png
+public/logo_2.png
+public/logo_3.png
+public/logo_4.png
+public/logo_indic.png
+public/backup.png
+public/project1.png
+public/project2.png
+public/project3.png
+public/project_1_illustration_*.png
+public/project_2_illustration_*.png
+public/project_3_illustration_*.png
+public/Gemini_Generated_Image_*.png
+public/new_hero_avatar_indigo_*.png
+
+# Misc
+check_errors.js
+prev_colours.txt
+src/App.tsx.bak
+src/assets/

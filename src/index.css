@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer utilities {
+  .glass-nav {
+    @apply sticky top-0 z-50 bg-[#F1F0ED]/70 backdrop-blur-md border-b border-black/5;
+  }
+
+  .hero-glow {
+    background: radial-gradient(circle, rgba(134, 229, 255, 0.4) 0%, rgba(241, 240, 237, 0) 70%);
+  }
+
+  .text-outline-gray {
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+    color: transparent;
+  }
+
+  .text-outline-white {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+    color: transparent;
+  }
+
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-sm border border-black/5;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html,
+body {
+  @apply bg-[#F1F0ED] text-[#0a0a0a] antialiased selection:bg-[#86E5FF]/40;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
